@@ -8,8 +8,8 @@ currentFile = __file__
 realPath = os.path.realpath(currentFile)
 dirPath = os.path.dirname(realPath)
 dirName = os.path.basename(dirPath)
-aria2c = dirPath + "/binaries/aria2c.exe"
-cookies_file = dirPath + '/cookies.txt'
+aria2c = f"{dirPath}/binaries/aria2c.exe"
+cookies_file = f'{dirPath}/cookies.txt'
 
 
 def parseCookieFile(cookiefile):
